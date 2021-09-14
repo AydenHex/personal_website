@@ -11,9 +11,9 @@ export default {
 <style scoped>
     p {
         font-size: 1.2em;
-        margin: auto;
         color: white;
-        margin-bottom: 1;
+        margin-top: 5rem;
+        text-align: center;;
     }
 
 </style>
