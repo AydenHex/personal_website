@@ -1,21 +1,19 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from "./components/Hero/Hero.vue";
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <Hero />
 </template>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./assets/css/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+
+body {
+    font-family: "Architects Daughter", cursive;
+    --main-hero-bg: #011527;
+    --secondary-violet: #9492E0;
+    --secondary-pink: #D52AD9;
 }
 </style>
