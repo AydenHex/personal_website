@@ -7,7 +7,7 @@
             <h3>Software Engineer</h3>
             <button onclick="location.href='mailto:aydendevg@gmail.com';">Contact me!</button>
         </div>
-        <img src="src/assets/avatar.png" alt="avatar" />
+        <img src="/src/assets/avatar.png" alt="avatar" />
     </div>
 </template>
 

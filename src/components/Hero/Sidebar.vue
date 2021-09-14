@@ -1,7 +1,7 @@
 <template>
   <div class="hero__sidebar">
-      <a href="https://www.linkedin.com/in/quentinroyer-25/" target="_blank"><img src="src/assets/socials/linked-in.svg" alt="linkedin" /></a>
-      <a href="https://twitter.com/DevAyden/" target="_blank"><img src="src/assets/socials/twitter.svg" alt="twitter" /></a>
+      <a href="https://www.linkedin.com/in/quentinroyer-25/" target="_blank"><img src="/src/assets/socials/linked-in.svg" alt="linkedin" /></a>
+      <a href="https://twitter.com/DevAyden/" target="_blank"><img src="/src/assets/socials/twitter.svg" alt="twitter" /></a>
   </div>
 </template>
 
