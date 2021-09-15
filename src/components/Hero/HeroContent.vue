@@ -19,19 +19,13 @@ export default {
 
 <style scoped>
     h1 {
-        font-size: 8em;
         font-weight: bolder;
-        
     }
 
     h1, h3 {
-        color: white;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    h3 {
-        font-size: 3em;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 0;
     }
 
     button {
@@ -39,30 +33,77 @@ export default {
         border-radius: 12px;
         background-color: var(--main-hero-bg);
         color: white;
-        font-size: 1.5em;
-        width: 10vw;
-        padding: 0.4em;
-        margin-top: 4rem;
     }
 
-    button:hover {
-        cursor: pointer;  
+     @media (max-device-width: 480px ) {
+        .hero__sidebar {
+            display: none;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        button {
+            font-size: 1em;
+            width: 30vw;
+            padding: 0.6em;
+            margin-top: 4rem;
+        }
+
+        .hero__content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: end;
+            text-align: center;
+            height: 80vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 1rem;
+        }
     }
 
-    .hero__content {
-        display: flex;
-        justify-content: space-between;
-        height: 75vh;
-        width: 80vw;
-        margin: auto;
-        margin-top: 1rem;
-    }
+    @media (min-device-width: 481px ) {
+        h1 {
+            font-size: 8em;
+        }      
 
-    .hero__content__main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        h3 {
+            font-size: 3em;
+        }
+
+        button {
+            font-size: 1.5em;
+            width: 10vw;
+            padding: 0.4em;
+            margin-top: 4rem;
+        }
+
+        button:hover {
+            cursor: pointer;  
+        }
+
+        .hero__content {
+            display: flex;
+            justify-content: space-between;
+            height: 75vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 1rem;
+        }
+
+        .hero__content__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
+    
     .violet {
         color: var(--secondary-violet)
     }

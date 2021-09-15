@@ -20,15 +20,20 @@ export default {
 </script>
 
 <style>
+
     .hero {
         background-color: var(--main-hero-bg);
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
-    .main__content {
-        display: flex;
+    @media only sceen and (min-device-width: 481px) {
+        .main__content {
+            display: flex;
+        }
+        
     }
+    
 </style>

@@ -12,21 +12,43 @@ export default {
 </script>
 
 <style scoped>
-    .hero__sidebar {
-        width: 10rem;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 1rem;
+    @media (max-device-width: 480px ) {
+        .hero__sidebar {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            bottom: 8vh;
+            justify-content: center;
+        }
+        a {
+            text-decoration: none;
+            padding: 1rem;
+        }
+        img {
+            width: 3rem;
+            height: auto;
+            filter: invert(66%) sepia(7%) saturate(2670%) hue-rotate(202deg) brightness(92%) contrast(90%);
+        }
     }
-
-    a {
-        text-decoration: none;
-        padding: 1rem;
+    @media (min-device-width: 481px ) {
+        .hero__sidebar {
+            position: absolute;
+            width: 10rem;
+            display: flex;
+            bottom: 15vh;
+            flex-direction: column-reverse;
+            gap: 1rem;
+        }
+        a {
+            text-decoration: none;
+            padding: 1rem;
+        }
+        img {
+            width: 5rem;
+            height: auto;
+            filter: invert(66%) sepia(7%) saturate(2670%) hue-rotate(202deg) brightness(92%) contrast(90%);
+        }
     }
-
-    img {
-        width: 5rem;
-        height: auto;
-        filter: invert(66%) sepia(7%) saturate(2670%) hue-rotate(202deg) brightness(92%) contrast(90%);
-    }
+   
 </style>

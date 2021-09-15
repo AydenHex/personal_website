@@ -15,5 +15,7 @@ body {
     --main-hero-bg: #011527;
     --secondary-violet: #9492E0;
     --secondary-pink: #D52AD9;
+    width: 100%;
+    height: 100%;
 }
 </style>
